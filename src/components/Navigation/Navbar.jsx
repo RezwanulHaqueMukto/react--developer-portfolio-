@@ -2,7 +2,7 @@ import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
 import { useState } from "react";
 const Navbar = () => {
-	const [menuOpen, SetmenuOpen] = useState(false);
+	const [menuOpen, SetMenuOpen] = useState(false);
 	return (
 		<nav className={styles.navbar}>
 			<a href="/" className={styles.title}>
@@ -17,11 +17,11 @@ const Navbar = () => {
 					}
 					className={styles.menuBtn}
 					alt="menu Button"
-					onClick={() => SetmenuOpen(!menuOpen)}
+					onClick={() => SetMenuOpen(!menuOpen)}
 				/>
 				<ul
 					className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ""}`}
-					onClick={() => SetmenuOpen(false)}
+					onClick={() => SetMenuOpen(false)}
 				>
 					<li>
 						<a href="#about">About</a>
